@@ -1,178 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax | Accounting | CPA | South Florida</title>
-    <meta name="description" content="South Florida CPA providing tax preparation, bookkeeping, late filing resolution, and international tax services for individuals, freelancers, real estate investors, and small businesses in Miami, Brickell, and Miami Beach. QuickBooks and Xero experts.">
-    <meta name="keywords" content="CPA, tax services, tax preparation, bookkeeping, small business accounting, QuickBooks, Xero, expat taxes, international tax, FATCA, FBAR, Miami CPA, Brickell accountant, Miami Beach tax help, freelancer taxes, real estate investor tax, late tax filing, IRS compliance, estimated taxes, 1099 filing, tax consultant South Florida">
-    <meta property="og:title" content="CPA Tax Services for Individuals & Small Businesses | South Florida">
-    <meta property="og:description" content="Trusted tax solutions including tax preparation, bookkeeping, and expat tax services in Miami, Brickell, and surrounding areas.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
-    <meta property="og:url" content="https://yourdomain.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CPA Tax Services for Individuals & Small Businesses | South Florida">
-    <meta name="twitter:description" content="South Florida CPA specializing in tax prep, bookkeeping, and late filing help for individuals and businesses.">
-    <meta name="twitter:image" content="https://yourdomain.com/twitter-card.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #2d2d2d;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        header {
-            padding: 50px 20px;
-            border-bottom: 2px solid #eaeaea;
-            background-color: #f9f9f9;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            color: #1b2e5a;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        header h1::before {
-            content: "\1F310";
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            color: #4a4a4a;
-        }
-        section {
-            padding: 60px 20px;
-        }
-        .section-inner {
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #1b2e5a;
-        }
-        .services ul {
-            list-style: none;
-            padding: 0;
-        }
-        .services li {
-            background-color: #f1f3f5;
-            margin: 15px auto;
-            padding: 20px;
-            border-left: 4px solid #1b2e5a;
-            border-radius: 4px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            width: 90%;
-            text-align: left;
-            transition: transform 0.3s ease;
-        }
-        .services li:hover {
-            transform: translateY(-4px);
-        }
-        .services h3 {
-            color: #1b2e5a;
-            margin-bottom: 5px;
-        }
-        .about p, .contact p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.05rem;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.9rem;
-            background-color: #f9f9f9;
-            color: #666;
-            border-top: 2px solid #eaeaea;
-        }
-        @media (max-width: 600px) {
-            section {
-                padding-bottom: 80px;
-            }
-            .services li {
-                text-align: center;
-                padding: 24px;
-            }
-            .services h3 {
-                font-size: 1.2rem;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-            header h1::before {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax | Accounting | CPA | South Florida</title>
+  <meta name="description" content="South Florida CPA providing tax preparation, bookkeeping, late filing resolution, and international tax services for individuals, freelancers, real estate investors, and small businesses in Miami, Brickell, and Miami Beach. QuickBooks and Xero experts.">
+  <meta name="keywords" content="CPA, tax services, tax preparation, bookkeeping, small business accounting, QuickBooks, Xero, expat taxes, international tax, FATCA, FBAR, Miami CPA, Brickell accountant, Miami Beach tax help, freelancer taxes, real estate investor tax, late tax filing, IRS compliance, estimated taxes, 1099 filing, tax consultant South Florida">
+  <meta property="og:title" content="CPA Tax Services for Individuals & Small Businesses | South Florida">
+  <meta property="og:description" content="Trusted tax solutions including tax preparation, bookkeeping, and expat tax services in Miami, Brickell, and surrounding areas.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CPA Tax Services for Individuals & Small Businesses | South Florida">
+  <meta name="twitter:description" content="South Florida CPA specializing in tax prep, bookkeeping, and late filing help for individuals and businesses.">
+  <meta name="twitter:image" content="https://yourdomain.com/twitter-card.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Michael Abbott CPA PLLC</h1>
-            <p>Trusted Tax Solutions for Individuals and Businesses</p>
-        </div>
-    </header>
+<body class="bg-white text-gray-800 leading-relaxed">
+  <!-- Header -->
+  <header class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold text-blue-900 flex items-center justify-center gap-2">
+        🌐 Michael Abbott CPA PLLC
+      </h1>
+      <p class="mt-3 text-lg text-gray-600">Trusted Tax Solutions for Individuals and Businesses</p>
+    </div>
+  </header>
 
-    <section class="services">
-        <div class="section-inner">
-            <h2>Our Services</h2>
-            <ul>
-                <li>
-                    <h3>Tax Preparation & Compliance for Small Businesses and Individuals</h3>
-                    <p>We prepare and file federal and state tax returns for individuals, freelancers, sole proprietors, and small businesses. Our compliance services are tailored to your situation, including estimated tax payments, 1099 reporting, and entity-specific strategies. We ensure your filings are accurate, timely, and meet IRS and state regulations. Individual return pricing begins at $750.</p>
-                </li>
-                <li>
-                    <h3>Bookkeeping & Accounting</h3>
-                    <p>Whether you're just starting out or growing fast, we offer full-service bookkeeping using platforms like QuickBooks Online and Xero. We reconcile accounts, handle expense categorization, generate financial reports, and collaborate with you or your team on a monthly or quarterly basis. Our bookkeeping ensures your books are clean, organized, and tax-ready.</p>
-                </li>
-                <li>
-                    <h3>Expat and International Tax Services</h3>
-                    <p>We serve U.S. citizens living abroad and foreign businesses or individuals with U.S. tax obligations. Our services include foreign earned income exclusions, FBAR and FATCA compliance, treaty planning, and support for dual-resident taxpayers. We simplify the complexities of cross-border reporting and help minimize international tax exposure.</p>
-                </li>
-            </ul>
+  <!-- Services -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-10">Our Services</h2>
+      <div class="grid gap-8 md:grid-cols-3 text-left">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Tax Preparation & Compliance</h3>
+          <p class="text-gray-700 text-sm">
+            Federal and state tax returns for individuals, freelancers, and small businesses. We handle estimated taxes, 1099s, and entity-specific strategies. Individual return pricing begins at <span class="font-semibold">$750</span>.
+          </p>
         </div>
-    </section>
-
-    <section class="about">
-        <div class="section-inner">
-            <h2>Who We Are</h2>
-            <p>We are a modern CPA practice based in South Florida, serving individuals, freelancers, small business owners, and U.S. expats around the world. With over 15 years of experience in public and private tax, we specialize in accurate, responsive, and practical tax solutions. Whether you're navigating complex international filings, catching up on late returns, or just want clean books and peace of mind — we're here to help with personalized, professional service. Our principal, Michael Abbott, is a CPA in the State of Florida who holds a Bachelor of Science in Accounting from the University at Buffalo and a Master of Science in Taxation from the University of Miami.</p>
+        <!-- Service 2 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Bookkeeping & Accounting</h3>
+          <p class="text-gray-700 text-sm">
+            Full-service bookkeeping using QuickBooks and Xero. We reconcile accounts, categorize expenses, and provide clean books and reports on a monthly or quarterly basis.
+          </p>
         </div>
-    </section>
-
-    <section class="contact">
-        <div class="section-inner">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:michael@michaelabbottcpa.com">michael@michaelabbottcpa.com</a></p>
-            <p>South Florida, United States</p>
+        <!-- Service 3 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-blue-900 mb-2">Expat & International Tax</h3>
+          <p class="text-gray-700 text-sm">
+            U.S. citizens abroad and foreign entities with U.S. obligations. Includes FEIE, FATCA/FBAR compliance, treaty planning, and minimizing cross-border tax exposure.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Michael Abbott CPA PLLC. All rights reserved.
-    </footer>
+  <!-- About -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center md:text-left">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Who We Are</h2>
+      <p class="text-gray-700">
+        We are a modern CPA practice based in South Florida, serving individuals, freelancers, small business owners, and U.S. expats worldwide. With over 15 years of experience, we specialize in accurate, responsive, and practical tax solutions. Our principal, <strong>Michael Abbott</strong>, is a Florida-licensed CPA with a B.S. in Accounting from the University at Buffalo and an M.S. in Taxation from the University of Miami.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Contact Us</h2>
+      <p class="text-gray-700 mb-2">
+        Email: <a href="mailto:michael@michaelabbottcpa.com" class="text-blue-700 hover:underline">michael@michaelabbottcpa.com</a>
+      </p>
+      <p class="text-gray-700">South Florida, United States</p>
+      <a href="mailto:michael@michaelabbottcpa.com" class="inline-block mt-6 px-6 py-3 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-800 transition">
+        Schedule a Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 border-t border-gray-200 text-center py-6 text-sm text-gray-600">
+    &copy; 2025 Michael Abbott CPA PLLC. All rights reserved.
+  </footer>
 </body>
 </html>
