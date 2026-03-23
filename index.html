@@ -93,8 +93,15 @@
   }
 </style>
 
-<header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
-  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 transition-all duration-300">
+<header id="site-header" class="relative bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
+
+  <!-- ✨ Subtle illuminated corners -->
+  <div class="absolute inset-0 pointer-events-none
+              bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_60%),
+                  radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_60%)]">
+  </div>
+
+  <div id="site-header-inner" class="relative max-w-6xl mx-auto px-6 py-8 md:py-12 transition-all duration-300">
 
     <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
 
