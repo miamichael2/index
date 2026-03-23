@@ -82,7 +82,7 @@
 
     .header-mobile-portrait .line {
       font-size: 2.5rem !important;
-      line-height: 0.95 !important;
+      line-height: 0.75 !important;
     }
 
     .header-mobile-landscape .line,
@@ -92,22 +92,31 @@
     }
   }
 
-  /* Illuminated corners */
+  /* Header base */
   #site-header {
     position: sticky;
     top: 0;
     overflow: hidden;
+    background: #0b1f3a;
   }
 
+  /* Hidden top-corner illumination */
   #site-header::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms ease;
     background:
-      radial-gradient(circle at top left, rgba(255,255,255,0.10), transparent 38%),
-      radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 38%);
+      radial-gradient(circle at top left, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.18) 16%, rgba(255,255,255,0) 30%),
+      radial-gradient(circle at top right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.18) 16%, rgba(255,255,255,0) 30%);
     z-index: 0;
+  }
+
+  /* Only show after scroll */
+  #site-header.scrolled::before {
+    opacity: 1;
   }
 
   #site-header-inner {
@@ -116,10 +125,10 @@
   }
 </style>
 
-<header id="site-header" class="bg-[#0b1f3a] shadow-lg z-50 transition-all duration-300">
+<header id="site-header" class="shadow-lg z-50 transition-all duration-300">
   <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 transition-all duration-300">
 
-    <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
+    <h1 class="leading-[0.75] text-left md:text-center font-light tracking-tight">
 
       <!-- Mobile Portrait -->
       <span class="header-mobile-portrait">
@@ -149,17 +158,22 @@
 </header>
 
 <script>
+  const header = document.getElementById('site-header');
   const inner = document.getElementById('site-header-inner');
   const subtitle = document.getElementById('site-header-subtitle');
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+
       inner.classList.remove('py-8', 'md:py-12');
       inner.classList.add('py-4');
 
       subtitle.classList.remove('text-base', 'md:text-xl', 'mt-3');
       subtitle.classList.add('text-sm', 'md:text-lg', 'mt-1');
     } else {
+      header.classList.remove('scrolled');
+
       inner.classList.remove('py-4');
       inner.classList.add('py-8', 'md:py-12');
 
