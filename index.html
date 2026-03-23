@@ -17,6 +17,19 @@
   <meta name="twitter:image" content="https://yourdomain.com/twitter-card.jpg">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'landscape': { 'raw': '(orientation: landscape)' },
+            'short': { 'raw': '(max-height: 500px)' }
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
     body {
       font-family: Helvetica, Arial, sans-serif;
