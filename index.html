@@ -28,30 +28,49 @@
 <body class="bg-gradient-to-b from-gray-50 via-white to-gray-50 text-gray-800 leading-relaxed">
   
 <!-- Header -->
-<header class="bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
-  <div class="max-w-6xl mx-auto px-6 py-16">
+<header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
+  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-20 transition-all duration-300">
     
-    <h1 class="leading-tight text-left md:text-center font-normal tracking-tight"
+    <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight transition-all duration-300"
         style="font-family: Helvetica, Arial, sans-serif;">
       
       <!-- Mobile (stacked, larger) -->
-      <span class="block text-5xl text-white md:hidden">michael</span>
-      <span class="block text-5xl text-white md:hidden">abbott</span>
-      <span class="block text-5xl text-red-500 md:hidden">cpa</span>
+      <span class="block text-6xl text-white md:hidden">michael</span>
+      <span class="block text-6xl text-white md:hidden">abbott</span>
+      <span class="block text-6xl text-red-400 md:hidden">cpa</span>
 
       <!-- Desktop (single line, larger) -->
-      <span class="hidden md:inline text-7xl text-white">michaelabbott</span><span class="hidden md:inline text-7xl text-red-500">cpa</span>
-
+      <span class="hidden md:inline text-8xl text-white">michaelabbott</span><span class="hidden md:inline text-8xl text-red-400">cpa</span>
     </h1>
 
-    <!-- Subheading -->
-    <p class="mt-6 text-blue-100 text-lg md:text-xl text-left md:text-center"
+    <p id="site-header-subtitle"
+       class="mt-6 text-blue-100 text-xl md:text-2xl text-left md:text-center font-light transition-all duration-300"
        style="font-family: Helvetica, Arial, sans-serif;">
       Trusted Tax and Accounting Solutions
     </p>
 
   </div>
 </header>
+
+<script>
+  const header = document.getElementById('site-header');
+  const inner = document.getElementById('site-header-inner');
+  const subtitle = document.getElementById('site-header-subtitle');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 40) {
+      inner.classList.remove('py-20');
+      inner.classList.add('py-8');
+      subtitle.classList.remove('text-xl', 'md:text-2xl', 'mt-6');
+      subtitle.classList.add('text-lg', 'md:text-xl', 'mt-3');
+    } else {
+      inner.classList.remove('py-8');
+      inner.classList.add('py-20');
+      subtitle.classList.remove('text-lg', 'md:text-xl', 'mt-3');
+      subtitle.classList.add('text-xl', 'md:text-2xl', 'mt-6');
+    }
+  });
+</script>
 
   <!-- Services -->
   <section class="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
