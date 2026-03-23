@@ -24,18 +24,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind config (for landscape + short screens) -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          screens: {
-            'landscape': { 'raw': '(orientation: landscape)' },
-            'short': { 'raw': '(max-height: 500px)' }
-          }
-        }
-      }
-    }
-  </script>
 
   <style>
     body {
@@ -47,34 +35,90 @@
 <body class="bg-gradient-to-b from-gray-50 via-white to-gray-50 text-gray-800 leading-relaxed">
 
 <!-- Header -->
-<header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
+<style>
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
 
-  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 short:py-4 transition-all duration-300">
+  /* Default visibility */
+  .header-mobile-portrait { display: block; }
+  .header-mobile-landscape { display: none; }
+  .header-desktop { display: none; }
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    .header-mobile-portrait,
+    .header-mobile-landscape {
+      display: none !important;
+    }
+
+    .header-desktop {
+      display: inline;
+    }
+  }
+
+  /* Mobile landscape only */
+  @media (max-width: 767px) and (orientation: landscape) {
+    .header-mobile-portrait {
+      display: none;
+    }
+
+    .header-mobile-landscape {
+      display: inline;
+    }
+  }
+
+  /* Short screens */
+  @media (max-height: 500px) {
+    #site-header-inner {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+    #site-header-subtitle {
+      font-size: 0.875rem !important;
+      margin-top: 0.25rem !important;
+    }
+
+    .header-mobile-portrait .line {
+      font-size: 2.5rem !important;
+      line-height: 0.95 !important;
+    }
+
+    .header-mobile-landscape .line,
+    .header-desktop .line {
+      font-size: 2rem !important;
+      line-height: 1 !important;
+    }
+  }
+</style>
+
+<header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
+  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 transition-all duration-300">
 
     <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
 
       <!-- Mobile Portrait -->
-      <span class="block landscape:hidden md:hidden">
-        <span class="block text-6xl short:text-4xl text-white">michael</span>
-        <span class="block text-6xl short:text-4xl text-white">abbott</span>
-        <span class="block text-6xl short:text-4xl text-red-400">cpa</span>
+      <span class="header-mobile-portrait">
+        <span class="line block text-6xl text-white">michael</span>
+        <span class="line block text-6xl text-white">abbott</span>
+        <span class="line block text-6xl text-red-400">cpa</span>
       </span>
 
       <!-- Mobile Landscape -->
-      <span class="hidden landscape:block md:hidden">
-        <span class="text-4xl short:text-3xl text-white">michaelabbott</span><span class="text-4xl short:text-3xl text-red-400">cpa</span>
+      <span class="header-mobile-landscape">
+        <span class="line text-4xl text-white">michaelabbott</span><span class="line text-4xl text-red-400">cpa</span>
       </span>
 
       <!-- Desktop -->
-      <span class="hidden md:inline">
-        <span class="text-8xl text-white">michaelabbott</span><span class="text-8xl text-red-400">cpa</span>
+      <span class="header-desktop">
+        <span class="line text-8xl text-white">michaelabbott</span><span class="line text-8xl text-red-400">cpa</span>
       </span>
 
     </h1>
 
-    <!-- Subtitle -->
     <p id="site-header-subtitle"
-       class="mt-3 text-blue-100 text-base md:text-xl short:text-sm text-left md:text-center font-light transition-all duration-300">
+       class="mt-3 text-blue-100 text-base md:text-xl text-left md:text-center font-light transition-all duration-300">
       Trusted Tax and Accounting Solutions
     </p>
 
@@ -87,17 +131,17 @@
 
   window.addEventListener('scroll', function () {
     if (window.scrollY > 40) {
-      inner.classList.remove('py-8','md:py-12','short:py-4');
+      inner.classList.remove('py-8', 'md:py-12');
       inner.classList.add('py-4');
 
-      subtitle.classList.remove('text-base','md:text-xl','mt-3');
-      subtitle.classList.add('text-sm','md:text-lg','mt-1');
+      subtitle.classList.remove('text-base', 'md:text-xl', 'mt-3');
+      subtitle.classList.add('text-sm', 'md:text-lg', 'mt-1');
     } else {
       inner.classList.remove('py-4');
-      inner.classList.add('py-8','md:py-12','short:py-4');
+      inner.classList.add('py-8', 'md:py-12');
 
-      subtitle.classList.remove('text-sm','md:text-lg','mt-1');
-      subtitle.classList.add('text-base','md:text-xl','mt-3');
+      subtitle.classList.remove('text-sm', 'md:text-lg', 'mt-1');
+      subtitle.classList.add('text-base', 'md:text-xl', 'mt-3');
     }
   });
 </script>
