@@ -25,46 +25,61 @@
 </head>
 <body class="bg-gradient-to-b from-gray-50 via-white to-gray-50 text-gray-800 leading-relaxed">
 
-  <!-- Header -->
-  <header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
-    <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-10 md:py-12 transition-all duration-300">
-      <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
-        <!-- Mobile -->
-        <span class="block text-7xl text-white md:hidden">michael</span>
-        <span class="block text-7xl text-white md:hidden">abbott</span>
-        <span class="block text-7xl text-red-400 md:hidden">cpa</span>
+<!-- Header -->
+<header id="site-header" class="bg-[#0b1f3a] shadow-lg sticky top-0 z-50 transition-all duration-300">
 
-        <!-- Desktop -->
-        <span class="hidden md:inline text-8xl text-white">michaelabbott</span><span class="hidden md:inline text-8xl text-red-400">cpa</span>
-      </h1>
+  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 short:py-4 transition-all duration-300">
 
-      <p id="site-header-subtitle"
-         class="mt-4 text-blue-100 text-lg md:text-xl text-left md:text-center font-light transition-all duration-300">
-        Trusted Tax and Accounting Solutions
-      </p>
-    </div>
-  </header>
+    <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
 
-  <script>
-    const inner = document.getElementById('site-header-inner');
-    const subtitle = document.getElementById('site-header-subtitle');
+      <!-- Mobile Portrait (stacked) -->
+      <div class="block landscape:hidden md:hidden">
+        <span class="block text-6xl short:text-4xl text-white">michael</span>
+        <span class="block text-6xl short:text-4xl text-white">abbott</span>
+        <span class="block text-6xl short:text-4xl text-red-400">cpa</span>
+      </div>
 
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 40) {
-        inner.classList.remove('py-10', 'md:py-12');
-        inner.classList.add('py-5');
+      <!-- Mobile Landscape (single line compact) -->
+      <div class="hidden landscape:block md:hidden">
+        <span class="text-4xl short:text-3xl text-white">michaelabbott</span><span class="text-4xl short:text-3xl text-red-400">cpa</span>
+      </div>
 
-        subtitle.classList.remove('text-lg', 'md:text-xl', 'mt-4');
-        subtitle.classList.add('text-sm', 'md:text-base', 'mt-2');
-      } else {
-        inner.classList.remove('py-5');
-        inner.classList.add('py-10', 'md:py-12');
+      <!-- Desktop -->
+      <div class="hidden md:block">
+        <span class="text-8xl text-white">michaelabbott</span><span class="text-8xl text-red-400">cpa</span>
+      </div>
 
-        subtitle.classList.remove('text-sm', 'md:text-base', 'mt-2');
-        subtitle.classList.add('text-lg', 'md:text-xl', 'mt-4');
-      }
-    });
-  </script>
+    </h1>
+
+    <!-- Subtitle -->
+    <p id="site-header-subtitle"
+       class="mt-3 text-blue-100 text-base md:text-xl short:text-sm text-left md:text-center font-light transition-all duration-300">
+      Trusted Tax and Accounting Solutions
+    </p>
+
+  </div>
+</header>
+
+<script>
+  const inner = document.getElementById('site-header-inner');
+  const subtitle = document.getElementById('site-header-subtitle');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 40) {
+      inner.classList.remove('py-8','md:py-12','short:py-4');
+      inner.classList.add('py-4');
+
+      subtitle.classList.remove('text-base','md:text-xl','mt-3');
+      subtitle.classList.add('text-sm','md:text-lg','mt-1');
+    } else {
+      inner.classList.remove('py-4');
+      inner.classList.add('py-8','md:py-12','short:py-4');
+
+      subtitle.classList.remove('text-sm','md:text-lg','mt-1');
+      subtitle.classList.add('text-base','md:text-xl','mt-3');
+    }
+  });
+</script>
 
 <!-- Services -->
 <section class="py-24 px-6 bg-gradient-to-b from-white to-blue-50">
