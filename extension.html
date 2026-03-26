@@ -3,127 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tax Return Extension Help | michaelabbottcpa</title>
-  <meta name="description" content="Need help with a tax return extension, late filing, or finishing your 1040 after April 15? Direct CPA support with a clear, professional process." />
+  <title>File a Tax Extension or Return | michaelabbottcpa</title>
+  <meta name="description" content="Last-minute tax return or extension? Direct CPA support to file properly and avoid mistakes." />
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-white/20">
+  <style>
+    body { font-family: Helvetica, Arial, sans-serif; }
 
-  <header class="sticky top-0 z-30 border-b border-white/10 bg-slate-950/88 backdrop-blur-md">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-      <a href="/" class="text-[1.05rem] font-semibold tracking-tight text-white">
-        michaelabbott<span class="text-red-500">cpa</span>
+    .header-mobile-portrait { display: block; }
+    .header-mobile-landscape { display: none; }
+    .header-desktop { display: none; }
+
+    @media (min-width: 768px) {
+      .header-mobile-portrait,
+      .header-mobile-landscape { display: none !important; }
+      .header-desktop { display: inline; }
+    }
+
+    @media (max-width: 767px) and (orientation: landscape) {
+      .header-mobile-portrait { display: none; }
+      .header-mobile-landscape { display: inline; }
+    }
+
+    #site-header { position: sticky; top: 0; background: #0b1f3a; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+<header id="site-header" class="shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 py-8 md:py-12">
+    <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
+      <span class="header-mobile-portrait">
+        <span class="block text-6xl text-white">michael</span>
+        <span class="block text-6xl text-white">abbott</span>
+        <span class="block text-6xl text-red-400">cpa</span>
+      </span>
+      <span class="header-mobile-landscape">
+        <span class="text-4xl text-white">michaelabbott</span><span class="text-4xl text-red-400">cpa</span>
+      </span>
+      <span class="header-desktop">
+        <span class="text-8xl text-white">michaelabbott</span><span class="text-8xl text-red-400">cpa</span>
+      </span>
+    </h1>
+    <p class="mt-3 text-blue-100 text-base md:text-xl text-left md:text-center font-light">
+      Trusted Tax and Accounting Solutions
+    </p>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="bg-[linear-gradient(180deg,#081426_0%,#0b1f3a_40%,#0f172a_100%)] border-b border-white/10">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+
+    <h2 class="text-4xl sm:text-5xl font-light text-white leading-tight">
+      Need to file your taxes or an extension — right now?
+    </h2>
+
+    <p class="mt-6 text-lg text-slate-300 leading-8 max-w-2xl">
+      If you are up against the deadline, the priority is simple: file correctly, avoid penalties, and handle anything that still needs to be finished.
+    </p>
+
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+      <a href="mailto:michael@michaelabbottcpa.com?subject=Tax%20Return%20or%20Extension%20Help" class="rounded-full bg-white px-6 py-3 text-slate-900 font-semibold text-base hover:bg-slate-100 transition">
+        Email Now
       </a>
-      <nav class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-        <a href="/" class="transition hover:text-white">Home</a>
-        <a href="/services" class="transition hover:text-white">Services</a>
-        <a href="/about" class="transition hover:text-white">About</a>
-        <a href="mailto:michael@michaelabbottcpa.com" class="transition hover:text-white">Contact</a>
-      </nav>
-      <a href="mailto:michael@michaelabbottcpa.com?subject=1040%20Extension%20Help" class="inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-white/30 hover:bg-white/5 md:hidden">
-        Email
+      <a href="#steps" class="rounded-full border border-white/20 px-6 py-3 text-slate-200 hover:bg-white/5 transition">
+        What to do next
       </a>
     </div>
-  </header>
 
-  <main>
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(59,130,246,0.16),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(37,99,235,0.12),transparent_28%),linear-gradient(180deg,#020617_0%,#0f172a_100%)]"></div>
-      <div class="relative mx-auto max-w-5xl px-6 py-20 sm:py-24">
-        <div class="max-w-3xl">
-          <span class="inline-flex items-center rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-1.5 text-sm font-medium text-blue-200">
-            Individual 1040 Extension Support
-          </span>
+  </div>
+</section>
 
-          <h1 class="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Filed an extension? The return still needs to be completed properly.
-          </h1>
+<!-- ACTION STEPS -->
+<section id="steps" class="bg-slate-950">
+  <div class="max-w-4xl mx-auto px-6 py-16">
 
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            An extension gives you more time to file, but it does not simplify the work. I help individuals complete extended or delayed 1040 filings with a clear, direct process focused on accuracy, clean reporting, and getting the return finished correctly.
-          </p>
+    <h3 class="text-2xl sm:text-3xl text-white font-light">
+      What to do right now
+    </h3>
 
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="mailto:michael@michaelabbottcpa.com?subject=1040%20Extension%20Help" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-slate-950 transition hover:bg-slate-100">
-              Email About Your Return
-            </a>
-            <a href="#details" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-3 text-base font-medium text-slate-200 transition hover:border-slate-500 hover:bg-white/5">
-              Learn More
-            </a>
-          </div>
+    <div class="mt-8 space-y-6 text-slate-300 leading-8">
 
-          <p class="mt-5 text-sm leading-7 text-slate-400">
-            The fastest way to get started is by email. A short summary of your situation is enough.
-          </p>
-        </div>
+      <div>
+        <p class="text-white font-medium">1. Decide: file or extend</p>
+        <p>If your return is ready, file. If not, file an extension to avoid late filing penalties.</p>
       </div>
-    </section>
 
-    <section id="details" class="border-t border-white/10 bg-slate-950">
-      <div class="mx-auto max-w-4xl px-6 py-16 sm:py-20">
-        <div class="max-w-3xl">
-          <h2 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-            Where extended returns usually become more complicated
-          </h2>
-          <p class="mt-5 text-base leading-8 text-slate-300">
-            For many individuals, the issue is not the extension itself. The issue is that the return still involves details that are easy to mishandle without a clear process. That often includes side income, investment activity, rental property, multi-state issues, or simply a return that was put off because the information was not ready.
-          </p>
-          <p class="mt-5 text-base leading-8 text-slate-300">
-            This page is intentionally simple. If the return needs to be finished, the next step is just to reach out by email with a short summary. I can then review whether it is a good fit and what would be needed to move forward.
-          </p>
-        </div>
-
-        <div class="mt-12 grid gap-10 md:grid-cols-3">
-          <div>
-            <h3 class="text-lg font-semibold text-white">What an extension does</h3>
-            <p class="mt-3 text-sm leading-7 text-slate-300">
-              It gives additional time to file the return. It does not remove the need to calculate the return correctly or address any tax due.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="text-lg font-semibold text-white">Where people get stuck</h3>
-            <p class="mt-3 text-sm leading-7 text-slate-300">
-              Missing documents, unfinished bookkeeping, side income, rentals, investments, and uncertainty around payments are all common reasons extended returns remain unfinished.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="text-lg font-semibold text-white">How I help</h3>
-            <p class="mt-3 text-sm leading-7 text-slate-300">
-              I handle the return directly, identify what is actually needed, and keep the process focused on getting the filing completed properly.
-            </p>
-          </div>
-        </div>
+      <div>
+        <p class="text-white font-medium">2. Estimate any tax due</p>
+        <p>Extensions do not extend payment. Estimating and paying reduces interest and penalties.</p>
       </div>
-    </section>
 
-    <section class="border-t border-white/10 bg-slate-950">
-      <div class="mx-auto max-w-4xl px-6 py-16 sm:py-20">
-        <div class="max-w-3xl">
-          <h2 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-            Best suited for individuals who want the return handled properly
-          </h2>
-          <p class="mt-5 text-base leading-8 text-slate-300">
-            This is generally a good fit for individuals who do not want to guess through software prompts and would rather have the return reviewed and completed with a more direct approach.
-          </p>
-          <p class="mt-5 text-base leading-8 text-slate-300">
-            When you reach out, it helps to mention whether the return is already extended, whether prior years are involved, and whether there is business, rental, investment, or multi-state activity.
-          </p>
-        </div>
-
-        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a href="mailto:michael@michaelabbottcpa.com?subject=1040%20Extension%20Help" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-slate-950 transition hover:bg-slate-100">
-            Start by Email
-          </a>
-          <a href="mailto:michael@michaelabbottcpa.com?subject=1040%20Extension%20Help" class="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-3 text-base font-medium text-slate-200 transition hover:border-slate-500 hover:bg-white/5">
-            michael@michaelabbottcpa.com
-          </a>
-        </div>
+      <div>
+        <p class="text-white font-medium">3. Get the return handled properly</p>
+        <p>Extensions buy time — they do not reduce complexity. The return still needs to be completed correctly.</p>
       </div>
-    </section>
-  </main>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICE POSITIONING -->
+<section class="border-t border-white/10 bg-slate-950">
+  <div class="max-w-4xl mx-auto px-6 py-16">
+
+    <h3 class="text-2xl sm:text-3xl text-white font-light">
+      How I help
+    </h3>
+
+    <p class="mt-6 text-slate-300 leading-8 max-w-2xl">
+      I work directly with individuals who need to file a return quickly or properly extend and complete it afterward. The focus is straightforward: accurate filing, clear communication, and no unnecessary back-and-forth.
+    </p>
+
+    <p class="mt-6 text-slate-300 leading-8 max-w-2xl">
+      This is typically a good fit if your return involves multiple income sources, investments, rentals, or anything beyond a basic W-2.
+    </p>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="border-t border-white/10 bg-[linear-gradient(180deg,#0f172a_0%,#0b1f3a_100%)]">
+  <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+
+    <h3 class="text-3xl text-white font-light">
+      Need to get this handled?
+    </h3>
+
+    <p class="mt-5 text-slate-300 max-w-xl mx-auto">
+      Send a quick email with your situation and I’ll let you know the next step.
+    </p>
+
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:michael@michaelabbottcpa.com?subject=Tax%20Return%20or%20Extension%20Help" class="rounded-full bg-white px-6 py-3 text-slate-900 font-semibold hover:bg-slate-100 transition">
+        Email About Your Return
+      </a>
+      <a href="mailto:michael@michaelabbottcpa.com" class="rounded-full border border-white/20 px-6 py-3 text-slate-200 hover:bg-white/5 transition">
+        michael@michaelabbottcpa.com
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
 
 </body>
+</html>
+
 </html>
 
