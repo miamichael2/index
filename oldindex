@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax | Accounting | CPA | Miami | Florida</title>
+
+  <meta name="description" content="Trusted Miami CPA offering tax prep, accounting, and international tax services for entrepreneurs, influencers, real estate investors. Connect with us.">
+
+  <meta name="keywords" content="CPA, tax services, tax preparation, bookkeeping, small business accounting, QuickBooks, Xero, expat taxes, international tax, FATCA, FBAR, Miami CPA, Brickell accountant, Miami Beach tax help, freelancer taxes, real estate investor tax, late tax filing, IRS compliance, estimated taxes, 1099 filing, tax services Miami, tax preparation Miami, bookkeeping Miami, small business accounting Miami, QuickBooks Miami, Xero Miami, expat taxes Miami, international tax Miami, FATCA Miami, FBAR Miami, Miami CPA, Brickell accountant, Miami Beach tax, freelancer taxes Miami, real estate taxes Miami, late tax filing Miami, tax extension Miami, influencer taxes Miami, influencer accounting Miami, onlyfans taxes Miami, onlyfans accounting Miami, tiktok taxes Miami, tiktok accounting Miami, instagram taxes Miami, instagram accounting Miami, estimated taxes Miami, 1099 Miami, tax CPA South Florida">
+
+<meta property="og:title" content="Miami CPA | Tax Services for Individuals, Expats & Small Businesses">
+<meta property="og:description" content="Trusted Miami CPA offering tax preparation, accounting, and international tax services for entrepreneurs, real estate investors, and U.S. expats.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.michaelabbottcpa.com/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Miami CPA | Tax Services for Individuals, Expats & Small Businesses">
+<meta name="twitter:description" content="Trusted Miami CPA offering tax preparation, accounting, and international tax services for entrepreneurs, real estate investors, and U.S. expats.">
+
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18036841029"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18036841029');
+  </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind config (for landscape + short screens) -->
+
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 via-white to-gray-50 text-gray-800 leading-relaxed">
+
+<!-- Header -->
+<style>
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .header-mobile-portrait { display: block; }
+  .header-mobile-landscape { display: none; }
+  .header-desktop { display: none; }
+
+  @media (min-width: 768px) {
+    .header-mobile-portrait,
+    .header-mobile-landscape {
+      display: none !important;
+    }
+
+    .header-desktop {
+      display: inline;
+    }
+  }
+
+  @media (max-width: 767px) and (orientation: landscape) {
+    .header-mobile-portrait { display: none; }
+    .header-mobile-landscape { display: inline; }
+  }
+
+  @media (max-height: 500px) {
+    #site-header-inner {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+
+    #site-header-subtitle {
+      font-size: 0.875rem !important;
+      margin-top: 0.25rem !important;
+    }
+
+    .header-mobile-portrait .line {
+      font-size: 2.5rem !important;
+      line-height: 0.95 !important;
+    }
+
+    .header-mobile-landscape .line,
+    .header-desktop .line {
+      font-size: 2rem !important;
+      line-height: 1 !important;
+    }
+  }
+
+  #site-header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background: #0b1f3a;
+  }
+
+  /* Much subtler, mostly from the top corners */
+  #site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 220ms ease;
+    background:
+      radial-gradient(ellipse at top left,
+        rgba(255,255,255,0.22) 0%,
+        rgba(255,255,255,0.10) 8%,
+        rgba(255,255,255,0.00) 22%),
+      radial-gradient(ellipse at top right,
+        rgba(255,255,255,0.22) 0%,
+        rgba(255,255,255,0.10) 8%,
+        rgba(255,255,255,0.00) 22%);
+    z-index: 0;
+  }
+
+  #site-header.scrolled::before {
+    opacity: 1;
+  }
+
+  #site-header-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+    #who-we-are {
+    scroll-margin-top: 140px;
+  }
+</style>
+
+<header id="site-header" class="shadow-lg z-50 transition-all duration-300">
+  <div id="site-header-inner" class="max-w-6xl mx-auto px-6 py-8 md:py-12 transition-all duration-300">
+
+    <h1 class="leading-[0.95] text-left md:text-center font-light tracking-tight">
+
+      <span class="header-mobile-portrait">
+        <span class="line block text-6xl text-white">michael</span>
+        <span class="line block text-6xl text-white">abbott</span>
+        <span class="line block text-6xl text-red-400">cpa</span>
+      </span>
+
+      <span class="header-mobile-landscape">
+        <span class="line text-4xl text-white">michaelabbott</span><span class="line text-4xl text-red-400">cpa</span>
+      </span>
+
+      <span class="header-desktop">
+        <span class="line text-8xl text-white">michaelabbott</span><span class="line text-8xl text-red-400">cpa</span>
+      </span>
+
+    </h1>
+
+    <p id="site-header-subtitle"
+       class="mt-3 text-blue-100 text-base md:text-xl text-left md:text-center font-light transition-all duration-300">
+      Trusted Tax and Accounting Solutions
+    </p>
+
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('site-header');
+  const inner = document.getElementById('site-header-inner');
+  const subtitle = document.getElementById('site-header-subtitle');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+
+      inner.classList.remove('py-8', 'md:py-12');
+      inner.classList.add('py-4');
+
+      subtitle.classList.remove('text-base', 'md:text-xl', 'mt-3');
+      subtitle.classList.add('text-sm', 'md:text-lg', 'mt-1');
+    } else {
+      header.classList.remove('scrolled');
+
+      inner.classList.remove('py-4');
+      inner.classList.add('py-8', 'md:py-12');
+
+      subtitle.classList.remove('text-sm', 'md:text-lg', 'mt-1');
+      subtitle.classList.add('text-base', 'md:text-xl', 'mt-3');
+    }
+  });
+</script>
+
+<!-- Services -->
+<section class="relative py-20 px-6 bg-gradient-to-b from-white to-blue-50 overflow-hidden">
+  <!-- subtle background glow -->
+  <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_center,rgba(11,31,58,0.05),transparent_55%)]"></div>
+
+  <div class="relative max-w-6xl mx-auto">
+
+    <div class="grid gap-6 md:grid-cols-2">
+
+      <div class="group relative bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-slate-200/80 shadow-[0_8px_24px_rgba(15,23,42,0.05)] hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)] hover:-translate-y-0.5 transition duration-300">
+        <div class="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#0b1f3a]/35 to-transparent"></div>
+        <h3 class="text-xl font-semibold text-blue-900 mb-3">Tax Preparation</h3>
+        <p class="text-gray-700 text-base leading-7">
+          We prepare federal and state tax returns for real estate investors, entrepreneurs, influencers, creators, and small businesses. Pricing begins at $400 for individual returns and $1,050 for low-activity business returns.
+        </p>
+      </div>
+
+      <div class="group relative bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-slate-200/80 shadow-[0_8px_24px_rgba(15,23,42,0.05)] hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)] hover:-translate-y-0.5 transition duration-300">
+        <div class="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#0b1f3a]/35 to-transparent"></div>
+        <h3 class="text-xl font-semibold text-blue-900 mb-3">Real Estate Compliance</h3>
+        <p class="text-gray-700 text-base leading-7">
+          We provide tax preparation and compliance for real estate investors, including single-tenant commercial properties, shopping centers and office buildings up to 100,000 square feet, and residential rental properties.
+        </p>
+      </div>
+
+      <div class="group relative bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-slate-200/80 shadow-[0_8px_24px_rgba(15,23,42,0.05)] hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)] hover:-translate-y-0.5 transition duration-300">
+        <div class="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#0b1f3a]/35 to-transparent"></div>
+        <h3 class="text-xl font-semibold text-blue-900 mb-3">Expat & International Tax</h3>
+        <p class="text-gray-700 text-base leading-7">
+          We assist U.S. citizens abroad and foreign entities with U.S. tax obligations, including cross-border reporting, FBAR, Forms 5471 and 5472, foreign earned income exclusion, foreign tax credits, and treaty considerations.
+        </p>
+      </div>
+
+      <div class="group relative bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-slate-200/80 shadow-[0_8px_24px_rgba(15,23,42,0.05)] hover:shadow-[0_12px_30px_rgba(15,23,42,0.08)] hover:-translate-y-0.5 transition duration-300">
+        <div class="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#0b1f3a]/35 to-transparent"></div>
+        <h3 class="text-xl font-semibold text-blue-900 mb-3">State & Local Tax Services</h3>
+        <p class="text-gray-700 text-base leading-7">
+          We help businesses and individuals navigate multistate tax issues, including nexus analysis, voluntary disclosure agreements, audit support, remote work considerations, and non-resident filings.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Who We Are -->
+<section id="who-we-are" class="py-20 px-6 bg-[#0b1f3a]">
+  <div class="max-w-3xl mx-auto text-center">
+
+    <h2 class="text-3xl md:text-4xl font-semibold text-white mb-6">
+      Who We Are
+    </h2>
+
+    <!-- Intro -->
+    <p class="text-blue-100 text-lg leading-8">
+      We are a modern CPA practice based in South Florida, serving individuals, freelancers, small business owners, and U.S. expats worldwide. With over 15 years of experience, we specialize in accurate, responsive, and practical tax solutions.
+    </p>
+
+    <!-- Photo -->
+    <div class="mt-10 flex justify-center">
+      <div class="w-56 h-56 md:w-64 md:h-64 overflow-hidden rounded-xl shadow-lg border border-white/10 bg-white/5">
+        <img src="michael-abbott.jpg"
+             alt="Michael Abbott CPA"
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Name + Credentials -->
+    <div class="text-blue-200 text-sm md:text-base mt-8 space-y-1 leading-6">
+      <p class="font-medium text-white">Michael Abbott, CPA</p>
+      <p>Master of Science in Taxation, University of Miami</p>
+      <p>Bachelor of Science in Accounting, University at Buffalo</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact + Inquiry -->
+<section class="py-20 px-6 bg-gradient-to-b from-white to-blue-50">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <!-- Contact Header -->
+    <h2 class="text-3xl md:text-4xl font-semibold text-blue-900 mb-8">
+      Contact Us
+    </h2>
+
+    <!-- Contact Info -->
+    <p class="text-gray-700 text-lg mb-3">
+      Email: <a href="mailto:michael@michaelabbottcpa.com" class="text-blue-700 hover:underline">michael@michaelabbottcpa.com</a>
+    </p>
+
+    <p class="text-gray-700 text-lg">
+      Miami, Florida, United States
+    </p>
+
+    <!-- CTA -->
+    <a href="mailto:michael@michaelabbottcpa.com"
+       class="inline-block mt-8 px-8 py-4 bg-[#0b1f3a] text-white text-lg rounded-xl shadow hover:shadow-xl hover:scale-[1.03] transition">
+      Schedule a Consultation
+    </a>
+
+    <!-- LinkedIn -->
+    <div class="mt-6">
+      <a href="https://www.linkedin.com/in/michael-abbott-cpa-a799112/"
+         class="inline-block px-8 py-3 border border-blue-700 text-blue-700 text-lg rounded-xl hover:bg-blue-700 hover:text-white transition">
+        Connect on LinkedIn
+      </a>
+    </div>
+
+    <!-- Divider -->
+    <div class="mt-12 mb-10 border-t border-gray-200 max-w-md mx-auto"></div>
+
+    <!-- Inquiry Header -->
+    <h2 class="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">
+      Start a Conversation
+    </h2>
+
+    <!-- Inquiry Text -->
+    <p class="text-gray-600 text-base mb-6 leading-7 max-w-xl mx-auto">
+      Fill out the form below with a brief description of your tax situation and we will respond within 24 hours with an initial quote and follow-up questions.
+    </p>
+
+    <!-- Form -->
+    <div class="max-w-xl mx-auto text-left">
+      <form action="https://formspree.io/f/mreynloy" method="POST" class="space-y-4">
+
+        <input type="text" name="name" placeholder="Name"
+          class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] focus:border-[#0b1f3a]">
+
+        <input type="email" name="email" placeholder="Email"
+          class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] focus:border-[#0b1f3a]">
+
+        <textarea name="message" rows="4" placeholder="How can we help?"
+          class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] focus:border-[#0b1f3a]"></textarea>
+
+        <button type="submit"
+          class="w-full bg-[#0b1f3a] text-white py-2.5 rounded-md hover:opacity-90 transition">
+          Send Message
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0b1f3a] text-center py-8 text-base text-blue-100 shadow-inner">
+    &copy; 2026 Michael Abbott CPA PLLC. All rights reserved.
+  </footer>
+
+</body>
+</html>
