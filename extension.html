@@ -7,8 +7,43 @@
   <meta name="description" content="Last-minute tax return or extension? Direct CPA support to file properly and avoid mistakes." />
   <script src="https://cdn.tailwindcss.com"></script>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  /* Base typography (editorial style) */
+  body { 
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
+  /* Headings outside header — still Georgia but tighter */
+  h2, h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+
+  /* Paragraph refinement */
+  p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  /* Header stays clean sans-serif */
+  #site-header h1,
+  #site-header p {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Button text = sans-serif (important for contrast) */
+  a[class*="bg-white"],
+  a[class*="border"] {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.01em;
+  }
+
+  /* Existing layout rules (unchanged) */
   .header-mobile-portrait { display: block; }
   .header-mobile-landscape { display: none; }
   .header-desktop { display: none; }
@@ -24,7 +59,11 @@
     .header-mobile-landscape { display: inline; }
   }
 
-  #site-header { position: sticky; top: 0; background: #0b1f3a; }
+  #site-header { 
+    position: sticky; 
+    top: 0; 
+    background: #0b1f3a; 
+  }
 </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
