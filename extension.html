@@ -113,8 +113,20 @@
 <main>
 
 <!-- HERO -->
-<section class="bg-[linear-gradient(180deg,#081426_0%,#0b1f3a_40%,#0f172a_100%)] border-b border-white/10">
-  <div class="max-w-3xl mx-auto px-6 py-12 sm:py-14 text-center">
+<section class="relative border-b border-white/10">
+
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <img src="cropped-accounting.webp"
+         alt=""
+         class="w-full h-full object-cover object-left">
+    
+    <!-- Dark overlay (adjust strength here if needed) -->
+    <div class="absolute inset-0 bg-slate-950/85"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-3xl mx-auto px-6 py-12 sm:py-14 text-center">
 
     <h2 class="text-4xl sm:text-5xl font-light text-white leading-[1.1] tracking-tight">
       Need to file your return or an extension?
@@ -136,6 +148,7 @@
     </div>
 
   </div>
+
 </section>
 
 <!-- SHORT STEPS -->
