@@ -9,11 +9,11 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Charter-style font (Charis SIL) -->
+  <!-- Charter-style font -->
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Base typography — Charter-style serif */
+    /* Base typography */
     body { 
       font-family: "Charis SIL", Georgia, serif;
       line-height: 1.6;
@@ -22,20 +22,31 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* Headings outside header */
+    /* Headings */
     h2, h3 {
       font-family: "Charis SIL", Georgia, serif;
       letter-spacing: -0.01em;
       line-height: 1.25;
     }
 
-    /* Paragraph refinement */
+    /* Paragraph base */
     p {
       font-size: 1.05rem;
       line-height: 1.65;
+    }
+
+    /* Constrain readable content width */
+    main p {
       max-width: 65ch;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    /* Fix centering inside centered sections */
+    .text-center p {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     /* Header stays Helvetica */
@@ -45,7 +56,7 @@
       letter-spacing: -0.01em;
     }
 
-    /* Buttons = sans-serif contrast */
+    /* Buttons = sans-serif */
     a[class*="bg-white"],
     a[class*="border"] {
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
