@@ -5,67 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File a Tax Extension or Return | michaelabbottcpa</title>
   <meta name="description" content="Last-minute tax return or extension? Direct CPA support to file properly and avoid mistakes." />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  /* Base typography (editorial style) */
-  body { 
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.6;
-    letter-spacing: 0.01em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
 
-  /* Headings outside header — still Georgia but tighter */
-  h2, h3 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    letter-spacing: -0.01em;
-    line-height: 1.25;
-  }
+  <!-- Charter-style font (Charis SIL) -->
+  <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap" rel="stylesheet">
 
-  /* Paragraph refinement */
-  p {
-    font-size: 1.05rem;
-    line-height: 1.65;
-  }
+  <style>
+    /* Base typography — Charter-style serif */
+    body { 
+      font-family: "Charis SIL", Georgia, serif;
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-  /* Header stays clean sans-serif */
-  #site-header h1,
-  #site-header p {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: -0.01em;
-  }
+    /* Headings outside header */
+    h2, h3 {
+      font-family: "Charis SIL", Georgia, serif;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
 
-  /* Button text = sans-serif (important for contrast) */
-  a[class*="bg-white"],
-  a[class*="border"] {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.01em;
-  }
+    /* Paragraph refinement */
+    p {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      max-width: 65ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  /* Existing layout rules (unchanged) */
-  .header-mobile-portrait { display: block; }
-  .header-mobile-landscape { display: none; }
-  .header-desktop { display: none; }
+    /* Header stays Helvetica */
+    #site-header h1,
+    #site-header p {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: -0.01em;
+    }
 
-  @media (min-width: 768px) {
-    .header-mobile-portrait,
-    .header-mobile-landscape { display: none !important; }
-    .header-desktop { display: inline; }
-  }
+    /* Buttons = sans-serif contrast */
+    a[class*="bg-white"],
+    a[class*="border"] {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.01em;
+    }
 
-  @media (max-width: 767px) and (orientation: landscape) {
-    .header-mobile-portrait { display: none; }
-    .header-mobile-landscape { display: inline; }
-  }
+    /* Header layout rules */
+    .header-mobile-portrait { display: block; }
+    .header-mobile-landscape { display: none; }
+    .header-desktop { display: none; }
 
-  #site-header { 
-    position: sticky; 
-    top: 0; 
-    background: #0b1f3a; 
-  }
-</style>
+    @media (min-width: 768px) {
+      .header-mobile-portrait,
+      .header-mobile-landscape { display: none !important; }
+      .header-desktop { display: inline; }
+    }
+
+    @media (max-width: 767px) and (orientation: landscape) {
+      .header-mobile-portrait { display: none; }
+      .header-mobile-landscape { display: inline; }
+    }
+
+    #site-header { 
+      position: sticky; 
+      top: 0; 
+      background: #0b1f3a; 
+    }
+  </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100 antialiased">
 
 <header id="site-header" class="shadow-lg">
@@ -83,7 +93,7 @@
         <span class="text-8xl text-white">michaelabbott</span><span class="text-8xl text-red-400">cpa</span>
       </span>
     </h1>
-    <p class="mt-3 text-blue-100 text-base md:text-xl text-center md:text-center font-light">
+    <p class="mt-3 text-blue-100 text-base md:text-xl text-center font-light">
       State of Florida Certified Public Accountant
     </p>
   </div>
@@ -99,11 +109,11 @@
       Need to file your return or an extension?
     </h2>
 
-    <p class="mt-5 text-lg text-slate-300 leading-8 max-w-xl mx-auto">
+    <p class="mt-5 text-lg text-slate-300 leading-8">
       If you are up against the deadline, the priority is simple: file correctly, avoid penalties, and get a clear path forward. 
     </p>
 
-    <p class="mt-5 text-lg text-slate-300 leading-8 max-w-xl mx-auto">
+    <p class="mt-5 text-lg text-slate-300 leading-8">
       Filing an extension is completely fine. It just needs to be done properly. If no payment is due, we can file it for $100, applied toward your return once it is completed.
     </p>
 
